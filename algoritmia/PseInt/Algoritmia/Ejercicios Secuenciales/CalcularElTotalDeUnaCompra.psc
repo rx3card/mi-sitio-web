@@ -1,0 +1,36 @@
+Proceso CalcularElTotalDeUnaCompra
+	Definir cantidad, precio1, precio2, precio3, totalCompra, CantidadPrecioPorcadaProducto, cantidad1, cantidad2, cantidad3 Como Real;
+	Definir p1,p2,p3 Como Caracter;
+	Escribir "Para calcular el total de su compra ingrese los datos solicitados a continuación";
+	cantidad <- 3;
+	Escribir "Ingrese el nombre de cada producto y el precio, ademas de la cantidad por cada producto";
+	Escribir "Ingrese el nombre del producto 1";
+	leer p1;
+	Escribir "Ingrese el precio";
+	leer precio1;	
+	Escribir "Ingrese cuantas ", p1, " compro";
+	leer CantidadPrecioPorcadaProducto;
+	cantidad1 <- precio1*CantidadPrecioPorcadaProducto;
+	Escribir "Ingrese el nombre del producto 2";
+	leer p2;
+	Escribir "Ingrese el precio";
+	leer precio2;
+	Escribir "Ingrese cuantas ", p2, " compro";
+	leer CantidadPrecioPorcadaProducto;
+	cantidad2 <- precio2*CantidadPrecioPorcadaProducto;
+	Escribir "Ingrese el nombre del producto 3";
+	leer p3;
+	Escribir "Ingrese el precio";
+	leer precio3;
+	Escribir "Ingrese cuantas ", p3, " compro";
+	leer CantidadPrecioPorcadaProducto;
+	cantidad3 <- precio3*CantidadPrecioPorcadaProducto;
+	totalCompra <- cantidad1+cantidad2+cantidad3;
+	Escribir "**********************";
+	Escribir "Su total de compra es..";
+	Escribir p1, " ",  cantidad1, " COP";
+	Escribir p2, " ", cantidad2, " COP";
+	Escribir p3, " ", cantidad3, " COP";
+	Escribir "Total de la compra ", totalCompra, " COP";
+	Escribir "**********************";
+FinProceso
